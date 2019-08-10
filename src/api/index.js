@@ -31,7 +31,7 @@ export const reqSendCode = (phone)=>ajax.get(BASE+'/sendcode',{
 })
 export const reqPwdLogin = ({name,pwd,captcha})=>ajax.post(BASE+'/login_pwd',{name,pwd,captcha})
 
-export const reqSmsLogin =({phone,code})=>ajax.post(BASE+'/login_sms',{phone,code})
+export const reqSmsLogin =(phone,code)=>ajax.post(BASE+'/login_sms',{phone,code})
 
 export const reqAutoLogin = () => ajax({
     url: BASE + '/auto_login',
@@ -39,4 +39,8 @@ export const reqAutoLogin = () => ajax({
       needToken: true
     }
   })
+
+export const reqGoods = ()=>ajax('/goods')
+export const reqInfo = ()=>ajax('/info')
+export const reqRatings = ()=>ajax('/ratings')
     

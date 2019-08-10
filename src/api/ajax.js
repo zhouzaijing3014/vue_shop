@@ -13,7 +13,7 @@ axios.interceptors.request.use(config=>{
         config.data = qs.stringify(data)
     }
     if(config.headers.needToken){
-        const token = store.state.token
+        const token = store.state.user.token
         if(!token){
             const error = new Error('没有token,不能发送ajax请求')
             error.status = 401
