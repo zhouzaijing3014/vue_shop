@@ -17,7 +17,8 @@
     "vee-validate":"2.2.9",
     "mint-ui": "2.2.13",
     "mockjs":"1.0.1-beta3",
-    "better-scroll":".15.2"
+    "better-scroll":".15.2",
+    "vue-lazyload":"1.2.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.10.0",
